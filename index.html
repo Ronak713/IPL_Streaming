@@ -6,52 +6,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RONAK-FANCODE</title>
 <script src="https://content.jwplatform.com/libraries/KB5zFt7A.js"></script>
-<style>
-  body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Change color of control buttons */
-  .jw-icon {
-    color: red !important;
-  }
-
-  .jw-progress {
-    background-color: red !important;
-  }
-  
-  #telegramButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 388px;
-    height: 50px;
-    background: linear-gradient(90deg, darkred, red);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    animation: flowAnimation 2s infinite;
-  }
-
-  @keyframes flowAnimation {
-    0% {
-      background-position: -200px 0;
-    }
-    100% {
-      background-position: 200px 0;
-      }
-  }
-
-  #telegramButton:hover {
-    animation: none; /* Pause animation on hover */
-    background: linear-gradient(90deg, darkred, red); /* Change animation color to red */
-  }
-</style>
 </head>
+<style>
+body {
+    background-color: black;
+}
+#container {
+    background-color: black;
+}
+    #telegramButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 378px;
+      height: 50px;
+      background: linear-gradient(90deg, darkblue, #001f3f);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      animation: flowAnimation 2s infinite;
+    }
+
+    @keyframes flowAnimation {
+      0% {
+        background-position: -200px 0;
+      }
+      100% {
+        background-position: 200px 0;
+        }
+    }
+
+    #telegramButton:hover {
+      animation: none; /* Pause animation on hover */
+      background: linear-gradient(90deg, #001f3f, darkblue); /* Reverse colors on hover */
+    }
+  </style>
 <body>
 <div id="video"></div>
 
@@ -62,18 +53,19 @@
     autostart: true,
     mute: false,
     file:"https://prod-sports-hin-gm.jiocinema.com/hls/live/2100329/hd_akamai_androidmob_avc_hin_ipl_s2_m2240324/master.m3u8"
+  });
 </script>
 <script>
 if(confirm("Join Our Telegram Channel")) { window.location.href = "https://t.me/+wHp1c9ZFXklhZjll" }
 </script>
-<div id="telegramButton" onclick="redirectToTelegram()">
+  <div id="telegramButton" onclick="redirectToTelegram()">
   Join Telegram
-</div>
-<script>
-function redirectToTelegram() {
-  // Your redirect code here
-  window.location.href = 'https://t.me/+wHp1c9ZFXklhZjll';
-}
-</script>
+  </div>
+  <script>
+  function redirectToTelegram() {
+    // Your redirect code here
+    window.location.href = 'https://t.me/+wHp1c9ZFXklhZjll';
+  }
+  </script>
 </body>
-  </html>
+  </html
